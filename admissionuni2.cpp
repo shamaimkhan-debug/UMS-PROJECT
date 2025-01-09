@@ -102,6 +102,27 @@ int transportOption;
     } 
     }
     }
+// Fee Management Module
+            float fee;
+            int programChoice;
+            cout << "Choose program for fee calculation: " << endl;
+            cout << "1. Computer Science (CS)" << endl;
+            cout << "2. SLP" << endl;
+            cout << "Enter your program choice (1 or 2): ";
+            cin >> programChoice;
+
+            // Fee structure based on program
+            if (programChoice == 1) {
+                cout << "Fee for Computer Science program is 5000"  << endl;
+            } else if (programChoice == 2) {
+                cout << "Fee for SLP program is 4000: " << endl;
+            } else {
+                cout << "Invalid program choice" << endl;
+            }
+            return 0;
+}
+
+
     
 
 
